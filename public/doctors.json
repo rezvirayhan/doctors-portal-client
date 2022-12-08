@@ -1,0 +1,39 @@
+[
+    {
+      "_id": 1,
+      "name": "Doctor Name",
+      "discptrion":"Dis Lorem 20",
+      "img":"Doctor Img"
+      
+    },
+    {
+      "_id": 2,
+      "name": "Doctor Name",
+      "discptrion":"Dis Lorem 20",
+      "img":"Doctor Img"
+    },
+    {
+      "_id": 3,
+      "name": "Doctor Name",
+      "discptrion":"Dis Lorem 20",
+      "img":"Doctor Img"
+    },
+    {
+      "_id": 4,
+      "name": "Doctor Name",
+      "discptrion":"Dis Lorem 20",
+      "img":"Doctor Img"
+    },
+    {
+      "_id": 5,
+      "name": "Doctor Name",
+      "discptrion":"Dis Lorem 20",
+      "img":"Doctor Img"
+    },
+    {
+      "_id": 6,
+      "name": "Doctor Name",
+      "discptrion":"Dis Lorem 20",
+      "img":"Doctor Img"
+    }
+  ]
