@@ -22,14 +22,13 @@ const Service = ({ service, setTreatment }) => {
               htmlFor="booking-modal"
               onClick={() => setTreatment(service)}
               disabled={slots.length === 0}
-              style={{
-                background: "#3f51b5",
+              style={{background: "linear-gradient(136.85deg, #FF37F2 -15.82%, #405AFF 99.57%)",
                 fontWeight: "bold",
                 color: "white",
               }}
               className="btn"
             >
-              Buy Now
+              Booking Now
             </label>
         </div>
       </div>

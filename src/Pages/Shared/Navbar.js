@@ -8,6 +8,7 @@ import auth from "../../firebase.init";
 const Navbar = () => {
   const logout = () => {
     signOut(auth);
+    localStorage.removeItem('accessToken')
   };
 
   const [user, loading, error] = useAuthState(auth);
@@ -29,6 +30,11 @@ const Navbar = () => {
       <li>
         <Link to="/contact">Contact</Link>
       </li>
+      {user && (
+        <li>
+          <Link to="/dashbord">Dashbord</Link>
+        </li>
+      )}
       <li>
         {user ? (
           <button onClick={logout} className="btn btn-warning">
@@ -58,8 +64,8 @@ const Navbar = () => {
             >
               <path
                 strokeLinecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M4 6h16M4 12h8m-8 6h16"
               />
             </svg>
@@ -75,6 +81,28 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">{menuItems}</ul>
+      </div>
+      <div className="navbar-end">
+        <label
+          for="my-drawer-2"
+          tabIndex="1"
+          className="btn btn-ghost lg:hidden"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h8m-8 6h16"
+            />
+          </svg>
+        </label>
       </div>
     </div>
   );
