@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { useQuery } from "react-query";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 import Loading from "../Shared/Loading";
 
 const AddDoctor = () => {
@@ -9,13 +10,61 @@ const AddDoctor = () => {
     register,
     formState: { errors },
     handleSubmit,
+    reset
   } = useForm();
 
   const {data:services, isLoading}= useQuery('services', ()=> fetch("http://localhost:5000/service").then(res=>res.json()))
 
+
+  const imageStorageKey = 'e447e8f223f9a9146b6964b8e00ceb64';
+
+
+
   const onSubmit = async (data) => {
-    console.log("data", data);
+    const image= data.image[0];
+    const formData = new FormData();
+    formData.append('image', image);
+    const url = `https://api.imgbb.com/1/upload?key=${imageStorageKey}`
+    fetch(url, {
+      method:'POST',
+      body: formData
+    })
+    .then(res=>res.json())
+    .then(result =>{
+      if(result.success){
+        const img= result.data.url;
+        const doctor ={
+          name:data.name,
+          email:data.email,
+          Speciality:data.speciality,
+          img:img
+        }
+        fetch('http://localhost:5000/doctor', {
+          method:'POST',
+          headers:{
+            'content-type': 'application/json',
+             'authorization': `Beraer ${localStorage.getItem('accessToken')}`
+          },
+          body:JSON.stringify(doctor)
+        })
+        .then(res=> res.json())
+        .then(inserted=>{
+          if(inserted.insertedId){
+            toast.success('Doctors Added Succesfully Done... ')
+            reset()
+          }
+          else{
+            toast.error('Opps Sorry Failed To Added The Doctors')
+          }
+        })
+      }
+      console.log('imgbb', result);
+    })
   };
+
+
+
+
   if(isLoading){
     return <Loading></Loading>
   }
@@ -108,7 +157,7 @@ const AddDoctor = () => {
           <input
             type="file"
             className="input input-bordered w-full max-w-xs"
-            {...register("img", {
+            {...register("image", {
               required: {
                 value: true,
                 message: "Images Is Required",
