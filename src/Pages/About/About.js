@@ -1,13 +1,16 @@
 import React from 'react';
 import Footer from '../Shared/Footer';
+import AboutBanner from './AboutBanner';
 import AboutHome from './AboutHome';
-import AboutService from './AboutService';
-
+import AboutTeam from './AboutTeam';
+import AboutTeamDoctor from './AboutTeamDoctor';
 const About = () => {
     return (
         <div>
           <AboutHome></AboutHome>
-          <AboutService></AboutService>
+          <AboutBanner></AboutBanner>
+          <AboutTeam></AboutTeam>
+          <AboutTeamDoctor></AboutTeamDoctor>
           <Footer></Footer>
         </div>
     );
