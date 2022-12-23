@@ -2,7 +2,7 @@ import React from "react";
 import logo from '../../assets/footer_logo.png'
 const Footer = () => {
   return (
-    <footer className="p-10 bg-neutral text-neutral-content">
+    <footer style={{background:'#0b1120', color:'white'}} className="p-10 text-neutral-content mb-0 mt-0">
       <div className="footer">
         <div>
           <img src={logo} alt="" />
@@ -47,6 +47,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    
   );
 };
 

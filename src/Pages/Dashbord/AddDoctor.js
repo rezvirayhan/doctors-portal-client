@@ -156,7 +156,7 @@ const AddDoctor = () => {
           </label>
           <input
             type="file"
-            className="input input-bordered w-full max-w-xs"
+            class="file-input file-input-bordered w-full max-w-xs"
             {...register("image", {
               required: {
                 value: true,

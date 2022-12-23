@@ -3,7 +3,7 @@ import aboutTeam from "../../assets/about_main.png";
 
 const AboutTeam = () => {
     return (
-        <div style={{background:'#0b1120', color:'white'}}>
+        <div style={{background:'#607d8b', color:'white'}}>
         <div className="hero min-h-screen px-12">
           <div className="hero-content flex-col lg:flex-row-reverse">
             <img src={aboutTeam} className="w-[600px] md-w-[500px] lg-w-sm" alt="" />

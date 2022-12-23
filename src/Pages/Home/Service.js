@@ -10,9 +10,9 @@ const Service = ({service}) => {
       <h2 className="card-title">{service.name}</h2>
       <p>{service.description}</p>
 
-      {/* <div className="card-actions">
+      <div className="card-actions">
         <button className="btn btn-primary">Buy Now</button>
-      </div> */}
+      </div>
     </div>
   </div>
   );
