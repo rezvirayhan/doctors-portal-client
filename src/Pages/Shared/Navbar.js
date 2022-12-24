@@ -37,7 +37,7 @@ const Navbar = () => {
       )}
       <li>
         {user ? (
-          <button style={{background:'black',color: "white",fontWeight: "400"}} onClick={logout} className="btn">
+          <button style={{background:'white',color: "black",fontWeight: "800"}} onClick={logout} className="btn">
             Sign Out
           </button>
         ) : (
@@ -50,7 +50,7 @@ const Navbar = () => {
   return (
     <div
       className="navbar"
-      style={{ background: "white", color: "black", fontWeight: "600" }}
+      style={{ background: "rgb(33 59 124)", color: "white", fontWeight: "600" }}
     >
       <div className="navbar-start">
         <div className="dropdown">

@@ -6,45 +6,55 @@ import ourot from '../../assets/services/our_ot_4.jpg'
 import teeth from '../../assets/services/teeth_5_surgery.jpg'
 import ot from '../../assets/services/ot_6.jpg'
 import Service from './Service';
+import { useEffect } from 'react';
+import { useState } from 'react';
 const Services = () => {
-    const services = [
-        {
-            _id: 1,
-            name:'CT Scan',
-            description:'A computerized tomography (CT) scan combines a series of X-ray images taken from different angles around blood vessels and soft tissues inside your body.',
-            img: ctscan
-        },
-        {
-            _id: 2,
-            name:'Heart Surgery',
-            description:'However, according to the National Institute for Health and Clinical Excellence (NICE), survival rates 1 year after either form of open-heart surgery.',
-            img: hert
-        },
-        {
-            _id: 3,
-            name:'MRI Scan',
-            description:'Magnetic resonance imaging (MRI) uses a large magnet and radio waves to look at organs and structures inside your bodyHealth care professionals use MRI scans.',
-            img: mri
-        },
-        {
-            _id: 4,
-            name:'Our OT',
-            description:'Occupational therapy (OT) is a global healthcare profession. It involves the use of assessment and intervention to develop, recover, or maintain the meaningful.',
-            img: ourot
-        },
-        {
-            _id: 5,
-            name:'Teeth Opration',
-            description:'Yes, getting a tooth pulled can hurt. However, your dentist will typically give you local anesthesia during the procedure to eliminate the pain. Also, following the procedure.',
-            img: teeth
-        },
-        {
-            _id: 6,
-            name:'Body Checkup',
-            description:'Craniotomy. The most common type of surgery to remove a brain tumor is a craniotomy. This procedure involves making an incision in the scalp and removing a piece of bone.',
-            img: ot
-        }
-    ]
+    // const services = [
+    //     {
+    //         _id: 1,
+    //         name:'CT Scan',
+    //         description:'A computerized tomography (CT) scan combines a series of X-ray images taken from different angles around blood vessels and soft tissues inside your body.',
+    //         img: ctscan
+    //     },
+    //     {
+    //         _id: 2,
+    //         name:'Heart Surgery',
+    //         description:'However, according to the National Institute for Health and Clinical Excellence (NICE), survival rates 1 year after either form of open-heart surgery.',
+    //         img: hert
+    //     },
+    //     {
+    //         _id: 3,
+    //         name:'MRI Scan',
+    //         description:'Magnetic resonance imaging (MRI) uses a large magnet and radio waves to look at organs and structures inside your bodyHealth care professionals use MRI scans.',
+    //         img: mri
+    //     },
+    //     {
+    //         _id: 4,
+    //         name:'Our OT',
+    //         description:'Occupational therapy (OT) is a global healthcare profession. It involves the use of assessment and intervention to develop, recover, or maintain the meaningful.',
+    //         img: ourot
+    //     },
+    //     {
+    //         _id: 5,
+    //         name:'Teeth Opration',
+    //         description:'Yes, getting a tooth pulled can hurt. However, your dentist will typically give you local anesthesia during the procedure to eliminate the pain. Also, following the procedure.',
+    //         img: teeth
+    //     },
+    //     {
+    //         _id: 6,
+    //         name:'Body Checkup',
+    //         description:'Craniotomy. The most common type of surgery to remove a brain tumor is a craniotomy. This procedure involves making an incision in the scalp and removing a piece of bone.',
+    //         img: ot
+    //     }
+    // ]
+
+
+    const [services, setServices] = useState([])
+    useEffect(()=>{
+        fetch("http://localhost:5000/allservices")
+        .then(res=>res.json())
+        .then(data => setServices(data))
+    }, []);
     return (
        
         <div className='my-20'>

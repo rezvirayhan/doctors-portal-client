@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../Shared/Footer';
 import AboutBanner from './AboutBanner';
 import AboutFaq from './AboutFaq';
 import AboutHome from './AboutHome';
@@ -13,7 +12,6 @@ const About = () => {
           <AboutTeam></AboutTeam>
           <AboutTeamDoctor></AboutTeamDoctor>
           <AboutFaq></AboutFaq>
-          <Footer></Footer>
         </div>
     );
 };

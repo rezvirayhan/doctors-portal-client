@@ -31,7 +31,7 @@ const Service = ({ service, setTreatment }) => {
               Booking Now
             </label>
         </div>
-      </div>
+      </div>      
     </div>
   );
 };

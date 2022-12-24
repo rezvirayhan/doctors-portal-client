@@ -44,6 +44,7 @@ const AvailableAppointment = ({ date }) => {
           setTreatment={setTreatment}
         ></BookingModal>
       )}
+      
     </div>
   );
 };

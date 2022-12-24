@@ -13,6 +13,10 @@ const AboutTeamDoctor = () => {
             <AboutTeamDoctorCard  img={img2} title="Cosmetic surgeon" name="Larissa Ianson" description="Keeping your eye on the ball while performing a deep dive on the start-up mentality."></AboutTeamDoctorCard>
             <AboutTeamDoctorCard  img={img3} title="Otolaryngology" name="Marleen Denman" description="Taking seamless key performance indicators offline to maximise the long tail."></AboutTeamDoctorCard>
             <AboutTeamDoctorCard  img={img4} title="Neurosurgery" name="Jason Bolton" description="Dramatically visualize customer directed convergence without revolutionary ROI."></AboutTeamDoctorCard>
+            <AboutTeamDoctorCard  img={img1} title="Chief surgeon" name="Bernice Ray" description="Podcasting operational change management inside of workflows to establish a framework."></AboutTeamDoctorCard>
+            <AboutTeamDoctorCard  img={img2} title="Cosmetic surgeon" name="Larissa Ianson" description="Keeping your eye on the ball while performing a deep dive on the start-up mentality."></AboutTeamDoctorCard>
+            <AboutTeamDoctorCard  img={img3} title="Otolaryngology" name="Marleen Denman" description="Taking seamless key performance indicators offline to maximise the long tail."></AboutTeamDoctorCard>
+            <AboutTeamDoctorCard  img={img4} title="Neurosurgery" name="Jason Bolton" description="Dramatically visualize customer directed convergence without revolutionary ROI."></AboutTeamDoctorCard>
          </div>
         </div>
     );

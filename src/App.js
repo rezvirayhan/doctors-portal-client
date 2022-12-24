@@ -17,6 +17,8 @@ import Users from "./Pages/Dashbord/Users";
 import RequareAdmin from "./Pages/Dashbord/RequareAdmin";
 import AddDoctor from "./Pages/Dashbord/AddDoctor";
 import ManageDoctor from "./Pages/Dashbord/ManageDoctor";
+import ServiceBooking from "./Pages/Home/ServiceBooking";
+import Footer from "./Pages/Shared/Footer";
 
 function App() {
   return (
@@ -31,6 +33,15 @@ function App() {
           element={
             <RequareAuth>
               <Appointment />
+            </RequareAuth>
+          }
+        />
+
+        <Route
+          path="Booking/:serviceId"
+          element={
+            <RequareAuth>
+              <ServiceBooking />
             </RequareAuth>
           }
         />
@@ -70,10 +81,10 @@ function App() {
             }
           ></Route>
         </Route>
-
         <Route path="signup" element={<SignUp />} />
       </Routes>
       <ToastContainer />
+      <Footer></Footer>
     </div>
   );
 }
