@@ -1,47 +1,46 @@
-import React from "react";
 import { format } from "date-fns";
+import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
+import { toast } from "react-toastify";
 import auth from "../../firebase.init";
-import { toast } from 'react-toastify';
 
-const BookingModal = ({ date, treatment, setTreatment,refetch }) => {
+const BookingModal = ({ date, treatment, setTreatment, refetch }) => {
   const { _id, name, slots } = treatment;
   const [user, loading, error] = useAuthState(auth);
-  const formatteDate =  format(date, 'PP');
+  const formatteDate = format(date, "PP");
 
-const handlebooking = event =>{
+  const handlebooking = (event) => {
     event.preventDefault();
     const slot = event.target.slot.value;
-    console.log(_id, name, slot);
-   const  booking = {
-      treatmentId : _id,
+    const booking = {
+      treatmentId: _id,
       treatment: name,
-      date:formatteDate,
+      date: formatteDate,
       slot,
-      patient:user.email,
-      patientName:user.displayName,
-      phone:event.target.phone.value
-    }
+      patient: user.email,
+      patientName: user.displayName,
+      phone: event.target.phone.value,
+    };
 
-    fetch('http://localhost:5000/booking',{
-      method:'POST',
-      headers:{
-          'content-type': 'application/json'
+    fetch("http://localhost:5000/booking", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
       },
-      body:JSON.stringify(booking)
+      body: JSON.stringify(booking),
     })
-    .then(res=> res.json())
-    .then(data =>{
-      if(data.success){
-        toast(`Your Appointment Is Set, ${formatteDate} at ${slot}`)
-      }
-      else{
-        toast.error(`Alrady Have An Appointment Is${date.booking?.date} at ${data.booking?.slot}`)
-
-      }
-      refetch();
-      setTreatment(null)
-    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success) {
+          toast(`Your Appointment Is Set, ${formatteDate} at ${slot}`);
+        } else {
+          toast.error(
+            `Alrady Have An Appointment Is${date.booking?.date} at ${data.booking?.slot}`
+          );
+        }
+        refetch();
+        setTreatment(null);
+      });
   };
   return (
     <div>
@@ -57,30 +56,38 @@ const handlebooking = event =>{
           <h3 className="font-bold text-lg mb-5 grid grid-cols-1 justify-items-center">
             Your Booking: <span style={{ color: "tomato" }}>{name}</span>
           </h3>
-          <form onSubmit={handlebooking}
+          <form
+            onSubmit={handlebooking}
             className="grid grid-cols-1 gap-4 justify-items-center"
-           >
+          >
             <input
               type="text"
               disabled
               value={format(date, "PP")}
               className="input input-bordered w-full max-w-xs"
             />
-            <select name="slot" className="select select-bordered w-full max-w-xs">
-         {slots.map((slot, index) =><option key={index} value={slot}>{slot}</option>)}
+            <select
+              name="slot"
+              className="select select-bordered w-full max-w-xs"
+            >
+              {slots.map((slot, index) => (
+                <option key={index} value={slot}>
+                  {slot}
+                </option>
+              ))}
             </select>
             <input
               type="text"
               name="name"
               disabled
-              value={user?.displayName || ''}
+              value={user?.displayName || ""}
               className="input input-bordered w-full max-w-xs"
             />
             <input
               type="email"
               name="email"
               disabled
-              value={user?.email || ''}
+              value={user?.email || ""}
               className="input input-bordered w-full max-w-xs"
             />
             <input
