@@ -1,7 +1,6 @@
 import { format } from "date-fns";
-import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { toast } from "react-toastify";
+import Swal from "sweetalert2";
 import auth from "../../firebase.init";
 
 const BookingModal = ({ date, treatment, setTreatment, refetch }) => {
@@ -32,11 +31,21 @@ const BookingModal = ({ date, treatment, setTreatment, refetch }) => {
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
-          toast(`Your Appointment Is Set, ${formatteDate} at ${slot}`);
+          Swal.fire({
+            title: `Your Appointment Is Set, ${formatteDate} at ${slot}`,
+            showClass: {
+              popup: "animate__animated animate__fadeInDown",
+            },
+            hideClass: {
+              popup: "animate__animated animate__fadeOutUp",
+            },
+          });
         } else {
-          toast.error(
-            `Alrady Have An Appointment Is${date.booking?.date} at ${data.booking?.slot}`
-          );
+          Swal.fire({
+            icon: "error",
+            title: "Opps..",
+            text: `Alrady Have An Appointment Is ${formatteDate} at ${data.booking?.slot} `,
+          });
         }
         refetch();
         setTreatment(null);

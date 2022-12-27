@@ -8,10 +8,12 @@ import auth from "../../firebase.init";
 const Navbar = () => {
   const logout = () => {
     signOut(auth);
-    localStorage.removeItem('accessToken')
+    localStorage.removeItem("accessToken");
   };
 
   const [user, loading, error] = useAuthState(auth);
+
+  console.log(user);
 
   const menuItems = (
     <>
@@ -35,22 +37,50 @@ const Navbar = () => {
           <Link to="/dashbord">Dashbord</Link>
         </li>
       )}
-      <li>
-        {user ? (
-          <button style={{background:'white',color: "black",fontWeight: "800"}} onClick={logout} className="btn">
-            Sign Out
-          </button>
-        ) : (
-          <Link to="/login">Login</Link>
-        )}
-      </li>
+      <li>{!user && <Link to="/login">Login</Link>}</li>
+      {/* <div class="avatar">
+        <div class="w-12 rounded-full">
+          <img src={user?.photoURL} alt="userDisplayname" />
+        </div>
+      </div> */}
+
+      <div class="dropdown">
+        <label tabindex="0" class="avatar">
+          <div className="w-12 rounded-full">
+            <img src={user?.photoURL} alt="userDisplayname" />
+          </div>
+        </label>
+        <ul
+          style={{
+            background: "rgb(33 59 124)",
+            color: "white",
+            fontWeight: "600",
+          }}
+          tabindex="0"
+          class="dropdown-content menu p-2 shadow rounded-box w-52"
+        >
+          <li>
+            <button
+              style={{ background: "white", color: "black", fontWeight: "800" }}
+              onClick={logout}
+              className="btn"
+            >
+              Sign Out
+            </button>
+          </li>
+        </ul>
+      </div>
     </>
   );
 
   return (
     <div
       className="navbar"
-      style={{ background: "rgb(33 59 124)", color: "white", fontWeight: "600" }}
+      style={{
+        background: "rgb(33 59 124)",
+        color: "white",
+        fontWeight: "600",
+      }}
     >
       <div className="navbar-start">
         <div className="dropdown">

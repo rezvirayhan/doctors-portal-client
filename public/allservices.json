@@ -1,51 +1,121 @@
-
-
 [
-    
-    {
-      "name": "CT Scan",
-      "description":"A computerized tomography (CT) scan combines a series of X-ray images taken from different angles around blood vessels and soft tissues inside your body.",
-      "img":"https://ibb.co/KqHFhQC"
-      
-    },
-    {
-      "name": "Heart Surgery",
-      "description":"However, according to the National Institute for Health and Clinical Excellence (NICE), survival rates 1 year after either form of open-heart surgery.",
-      "img":"https://ibb.co/4YD7RGH"
-    },
-    {
-      "name": "MRI Scan",
-      "description":"Magnetic resonance imaging (MRI) uses a large magnet and radio waves to look at organs and structures inside your bodyHealth care professionals use MRI scans.",
-      "img":"https://ibb.co/7CcNZY4"
-    },
-    {
-      "name": "Our OT",
-      "description":"Occupational therapy (OT) is a global healthcare profession. It involves the use of assessment and intervention to develop, recover, or maintain the meaningful.",
-      "img":"https://ibb.co/rt7cPP3"
-    },
-    {
-      "name": "Teeth Opration",
-      "description":"Yes, getting a tooth pulled can hurt. However, your dentist will typically give you local anesthesia during the procedure to eliminate the pain. Also, following the procedure.",
-      "img":"https://ibb.co/7Qrjn0R"
-    },
-    {
-      "name": "Body Checkup",
-      "description":"Craniotomy. The most common type of surgery to remove a brain tumor is a craniotomy. This procedure involves making an incision in the scalp and removing a piece of bone.",
-      "img":"https://i.ibb.co/R0WzbML/ct-1-scan.jpg"
-    },
-    {
-      "name": "Body Checkup",
-      "description":"Craniotomy. The most common type of surgery to remove a brain tumor is a craniotomy. This procedure involves making an incision in the scalp and removing a piece of bone.",
-      "img":"https://i.ibb.co/R0WzbML/ct-1-scan.jpg"
-    },
-    {
-      "name": "Body Checkup",
-      "description":"Craniotomy. The most common type of surgery to remove a brain tumor is a craniotomy. This procedure involves making an incision in the scalp and removing a piece of bone.",
-      "img":"https://i.ibb.co/R0WzbML/ct-1-scan.jpg"
-    },
-    {
-      "name": "Body Checkup",
-      "description":"Craniotomy. The most common type of surgery to remove a brain tumor is a craniotomy. This procedure involves making an incision in the scalp and removing a piece of bone.",
-      "img":"https://i.ibb.co/R0WzbML/ct-1-scan.jpg"
-    }
-  ]
+  {
+    "name": "CT Scan",
+    "description": "A computerized tomography (CT) scan combines a series of X-ray images taken from different angles around blood vessels and soft tissues inside your body.",
+    "img": "https://i.ibb.co/R0WzbML/ct-1-scan.jpg",
+    "doctorName": "James Robert",
+    "doctorimages": "https://i.ibb.co/DWGWMBn/doctor-img-6.jpg",
+    "doctorsdescription": "We are looking to hire a doctor with outstanding medical knowledge and excellent counseling skills. Doctors are expected to be compassionate, have attentive listening skills, and the ability to communicate effectively with a genuine concern for patients and a passion to be of service and heal people.",
+    "drprice": "150",
+    "servicesroomimg": "https://images.unsplash.com/photo-1603398938378-e54eab446dde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "roomimg": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "fullteamimg": "https://images.unsplash.com/photo-1666214280557-f1b5022eb634?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "finaldescription": "However, according to the National Institute for Health and Clinical Excellence (NICE), survival rates 1 year after either form of open-heart surgery We are looking to hire a doctor with outstanding medical knowledge and excellent counseling skills. Doctors are expected to be compassionate, have attentive listening skills, and the ability to communicate effectively with a genuine concern for patients and a passion to be of service and heal people.A computerized tomography (CT) scan combines a series of X-ray images taken from different angles around blood vessels and soft tissues inside your body.",
+    "img": "https://i.ibb.co/R0WzbML/ct-1-scan.jpg"
+  },
+  {
+    "name": "Heart Surgery",
+    "description": "However, according to the National Institute for Health and Clinical Excellence (NICE), survival rates 1 year after either form of open-heart surgery.",
+    "img": "https://i.ibb.co/WPd6vwL/hert-2-surgery.jpg",
+    "doctorName": "Michael John",
+    "doctorimages": "https://i.ibb.co/jRBXWV0/doctor-img-2.jpg",
+    "doctorsdescription": "To ensure success, doctors should have fantastic organizational and time management skills, the ability to make effective decisions, and an innate ability to manage change. Top candidates will have the willingness and ability to handle uncertainty and conflicting demands while remaining calm under pressure.",
+    "drprice": "110",
+    "servicesroomimg": "https://images.unsplash.com/photo-1666214276454-09b8876cb6ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "roomimg": "https://images.unsplash.com/photo-1576671081837-49000212a370?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=798&q=80",
+    "fullteamimg": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "finaldescription": "A computerized tomography (CT) scan combines a series of X-ray images taken from different angles around blood vessels and soft tissues inside your body.We are looking to hire a doctor with outstanding medical knowledge and excellent counseling skills. Doctors are expected to be compassionate, have attentive listening skills, and the ability to communicate effectively with a genuine concern for patients and a passion to be of service and heal people To ensure success, doctors should have fantastic organizational and time management skills, the ability to make effective decisions, and an innate ability to manage change. Top candidates will have the willingness and ability to handle uncertainty and conflicting demands while remaining calm under pressure.",
+    "img": "https://i.ibb.co/R0WzbML/ct-1-scan.jpg"
+  },
+  {
+    "name": "MRI Scan",
+    "description": "Magnetic resonance imaging (MRI) uses a large magnet and radio waves to look at organs and structures inside your bodyHealth care professionals use MRI scans.",
+    "img": "https://i.ibb.co/c35XZgL/mri-3.jpg",
+    "doctorName": "William David",
+    "doctorimages": "https://i.ibb.co/TmfXL4R/doctor-img-3.jpg",
+    "doctorsdescription": "A Doctor, or Physician, is responsible for promoting the health and safety of their patients by providing proactive treatment and diagnoses. Their duties include speaking with patients to address their health concerns, conducting physical examinations to ensure their patients health and administering vaccinations for common illnesses or allergies.",
+    "drprice": "170",
+    "servicesroomimg": "https://images.unsplash.com/photo-1666214280352-db292c05fd80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "roomimg": "https://images.unsplash.com/photo-1504439468489-c8920d796a29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+    "fullteamimg": "https://images.unsplash.com/photo-1666214280250-41f16ba24a26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "finaldescription": "Occupational therapy (OT) is a global healthcare profession. It involves the use of assessment and intervention to develop, recover, or maintain the meaningful A Doctor, or Physician, is responsible for promoting the health and safety of their patients by providing proactive treatment and diagnoses. Their duties include speaking with patients to address their health concerns, conducting physical examinations to ensure their patients health and administering vaccinations for common illnesses or allergies Magnetic resonance imaging (MRI) uses a large magnet and radio waves to look at organs and structures inside your bodyHealth care professionals use MRI scans."
+  },
+  {
+    "name": "Our OT",
+    "description": "Occupational therapy (OT) is a global healthcare profession. It involves the use of assessment and intervention to develop, recover, or maintain the meaningful.",
+    "img": "https://i.ibb.co/YWRy99X/our-ot-4.jpg",
+    "doctorName": "Joseph Nic",
+    "doctorimages": "https://i.ibb.co/0hVqD8p/doctor-img-4.jpg",
+    "doctorsdescription": "Doctors typically work for hospitals, urgent care facilities and private clinics to administer treatment and give patients health advice. They work with Nurses and other healthcare professionals to ensure their patients receive quality medical attention.",
+    "drprice": "115",
+    "servicesroomimg": "https://images.unsplash.com/photo-1666214278797-b2cc1b12be76?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "roomimg": "https://images.unsplash.com/photo-1618015358954-344302f421a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80",
+    "fullteamimg": "https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "finaldescription": "Yes, getting a tooth pulled can hurt. However, your dentist will typically give you local anesthesia during the procedure to eliminate the pain. Also, following the procedure.Doctors typically work for hospitals, urgent care facilities and private clinics to administer treatment and give patients health advice. They work with Nurses and other healthcare professionals to ensure their patients receive quality medical attention Occupational therapy (OT) is a global healthcare profession. It involves the use of assessment and intervention to develop, recover, or maintain the meaningful."
+  },
+  {
+    "name": "Teeth Opration",
+    "description": "Yes, getting a tooth pulled can hurt. However, your dentist will typically give you local anesthesia during the procedure to eliminate the pain. Also, following the procedure.",
+    "img": "https://i.ibb.co/ZScGBbY/teeth-5-surgery.jpg",
+    "doctorName": "Christopher",
+    "doctorimages": "https://i.ibb.co/5RDjC4n/pexels-mikhail-nilov-8942627.jpg",
+    "doctorsdescription": "Their job is to prescribe medications, refer patients to specialized medical professionals and conduct tests to diagnose injuries, illnesses or diseases.  They may also admit patients to the hospital for significant injuries or illnesses",
+    "drprice": "160",
+    "servicesroomimg": "https://images.unsplash.com/photo-1666214280391-c9ef08d09da8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "roomimg": "https://images.unsplash.com/photo-1527613426441-4da17471b66d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=852&q=80",
+    "fullteamimg": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=891&q=80",
+    "finaldescription": "Craniotomy. The most common type of surgery to remove a brain tumor is a craniotomy. This procedure involves making an incision in the scalp and removing a piece of bone.Their job is to prescribe medications, refer patients to specialized medical professionals and conduct tests to diagnose injuries, illnesses or diseases.  They may also admit patients to the hospital for significant injuries or illnesses Yes, getting a tooth pulled can hurt. However, your dentist will typically give you local anesthesia during the procedure to eliminate the pain. Also, following the procedure."
+  },
+  {
+    "name": "Teeth Orthodontics",
+    "description": "Craniotomy. The most common type of surgery to remove a brain tumor is a craniotomy. This procedure involves making an incision in the scalp and removing a piece of bone.",
+    "img": "https://i.ibb.co/PC6qVgb/ot-6.jpg",
+    "doctorName": "Matthew",
+    "doctorimages": "https://i.ibb.co/TmrM7XG/doctor-img-6.jpg",
+    "doctorsdescription": "Doctors need a bachelors degree, a medical degree and three to seven years in residency or a fellowship, depending on the specialization. While no specific major is required for the bachelors degree, most students usually choose a science such as biology or chemistry",
+    "drprice": "180",
+    "servicesroomimg": "https://images.unsplash.com/photo-1579165466991-467135ad3110?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "roomimg": "https://images.unsplash.com/photo-1628235176517-71013205a2de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "fullteamimg": "https://images.unsplash.com/photo-1516549655169-df83a0774514?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "finaldescription": "Craniotomy. The most common type of surgery to remove a brain tumor is a craniotomy. This procedure involves making an incision in the scalp and removing a piece of bone.Doctors need a bachelors degree, a medical degree and three to seven years in residency or a fellowship, depending on the specialization. While no specific major is required for the bachelors degree, most students usually choose a science such as biology or chemistry Doctors need a bachelors degree, a medical degree and three to seven years in residency or a fellowship, depending on the specialization. While no specific major is required for the bachelors degree, most students usually choose a science such as biology or chemistry"
+  },
+  {
+    "name": "All Body Scan",
+    "description": "Craniotomy. The most common type of surgery to remove a brain tumor is a craniotomy. This procedure involves making an incision in the scalp and removing a piece of bone.",
+    "img": "https://i.ibb.co/Hq1v8zv/body-scan-7.jpg",
+    "doctorName": "Donald Mac",
+    "doctorimages": "https://i.ibb.co/q7VmzTp/doctor-img-1.jpg",
+    "doctorsdescription": "In order to be accepted into a medical school, students must have completed their bachelors degrees and taken the MCAT (Medical College Admission Test). Most medical school programs last four years.",
+    "drprice": "190",
+    "servicesroomimg": "https://images.unsplash.com/photo-1666214280391-c9ef08d09da8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "roomimg": "https://images.unsplash.com/photo-1527613426441-4da17471b66d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=852&q=80",
+    "fullteamimg": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=891&q=80",
+    "finaldescription": "In order to be accepted into a medical school, students must have completed their bachelors degrees and taken the MCAT (Medical College Admission Test). Most medical school programs last four years. Craniotomy. The most common type of surgery to remove a brain tumor is a craniotomy. This procedure involves making an incision in the scalp and removing a piece of bone.After completing medical school and residency requirements, applicants need to pass a standardized national licensure exam before being allowed to practice medicine."
+  },
+  {
+    "name": "Spa Checkup",
+    "description": "Craniotomy. The most common type of surgery to remove a brain tumor is a craniotomy. This procedure involves making an incision in the scalp and removing a piece of bone.",
+    "img": "https://i.ibb.co/Wvcp54n/spa-8.jpg",
+    "doctorName": "Andrew Max",
+    "doctorimages": "https://i.ibb.co/qDPN7R5/doctor-img-7.jpg",
+    "doctorsdescription": "After completing medical school and residency requirements, applicants need to pass a standardized national licensure exam before being allowed to practice medicine.",
+    "drprice": "90",
+    "servicesroomimg": "https://images.unsplash.com/photo-1603398938378-e54eab446dde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "roomimg": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "fullteamimg": "https://images.unsplash.com/photo-1666214280557-f1b5022eb634?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "finaldescription": "All applicants are required to have some experience before they can practice medicine in a primary care capacity. Students also usually receive some supervised practical training in a hospital during medical school Candidates need to complete a residency program or fellowship in a hospital before they can become licensed Doctors. Depending on the specialization,Craniotomy. The most common type of surgery to remove a brain tumor is a craniotomy. This procedure involves making an incision in the scalp and removing a piece of bone All applicants are required to have some experience before they can practice medicine in a primary care capacity. Students also usually receive some supervised practical training in Craniotomy. The most common type of surgery to remove a brain tumor is a craniotomy. This procedure involves making an incision in the scalp and removing a piece of bone"
+  },
+  {
+    "name": "Boby Care",
+    "description": "Craniotomy. The most common type of surgery to remove a brain tumor is a craniotomy. This procedure involves making an incision in the scalp and removing a piece of bone.",
+    "img": "https://i.ibb.co/jW0Lf6C/baby-care-9.jpg",
+    "doctorName": "Kenneth Brian",
+    "doctorimages": "https://i.ibb.co/DRWWjDV/doctor-img-9.jpg",
+    "doctorsdescription": "Candidates need to complete a residency program or fellowship in a hospital before they can become licensed Doctors. Depending on the specialization, this will last anywhere from three to seven years. All applicants are required to have some experience before they can practice medicine in a primary care capacity. Students also usually receive some supervised practical training in a hospital during medical school",
+    "drprice": "140",
+    "servicesroomimg": "https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80",
+    "roomimg": "https://images.unsplash.com/photo-1578496480240-32d3e0c04525?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "fullteamimg": "https://images.unsplash.com/photo-1631557676757-fcc7b1160be8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=891&q=80",
+    "finaldescription": "Craniotomy. The most common type of surgery to remove a brain tumor is a craniotomy. This procedure involves making an incision in the scalp and removing a piece of bone.Candidates need to complete a residency program or fellowship in a hospital before they can become licensed Doctors. Depending on the specialization, this will last anywhere from three to seven years. All applicants are required to have some experience before they can practice medicine in a primary care capacity. Students also usually receive some supervised practical training in a hospital during medical school Candidates need to complete a residency program or fellowship in a hospital before they can become licensed Doctors. Depending on the specialization, this will last anywhere from three to seven years. All applicants are required to have some experience before they can practice medicine in a primary care capacity. Students also usually receive some supervised practical training in a hospital during medical school"
+  }
+]
