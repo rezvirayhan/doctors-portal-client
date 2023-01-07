@@ -1,4 +1,5 @@
 import React from "react";
+import Slide from "react-reveal/Slide";
 import { Link } from "react-router-dom";
 
 const Service = ({ service }) => {
@@ -10,13 +11,14 @@ const Service = ({ service }) => {
       <div className="card-body items-center text-center">
         <h2 className="card-title">{service.name}</h2>
         <p>{service.description}</p>
-
-        <div className="card-actions">
-          <Link to={`Booking/${service._id}`}>
-            {" "}
-            <button class="btn">Booking +</button>{" "}
-          </Link>
-        </div>
+        <Slide right>
+          <div className="card-actions">
+            <Link to={`Booking/${service._id}`}>
+              {" "}
+              <button class="btn">Booking +</button>{" "}
+            </Link>
+          </div>
+        </Slide>
       </div>
     </div>
   );
