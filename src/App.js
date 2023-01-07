@@ -1,24 +1,23 @@
-import "./App.css";
-import { Routes, Route, Link } from "react-router-dom";
-import Navbar from "./Pages/Shared/Navbar";
-import Home from "./Pages/Home/Home";
-import About from "./Pages/About/About";
-import Login from "./Pages/Login/Login";
-import SignUp from "./Pages/Login/SignUp";
-import Appointment from "./Pages/Appointment/Appointment";
-import RequareAuth from "./Pages/Login/RequareAuth";
+import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Dashbord from "./Pages/Dashbord/Dashbord";
-import MyAppointments from "./Pages/Dashbord/MyAppointments";
-import MyReview from "./Pages/Dashbord/MyReview";
-import History from "./Pages/Dashbord/History";
-import Users from "./Pages/Dashbord/Users";
-import RequareAdmin from "./Pages/Dashbord/RequareAdmin";
+import "./App.css";
+import About from "./Pages/About/About";
+import Appointment from "./Pages/Appointment/Appointment";
 import AddDoctor from "./Pages/Dashbord/AddDoctor";
+import Dashbord from "./Pages/Dashbord/Dashbord";
+import History from "./Pages/Dashbord/History";
 import ManageDoctor from "./Pages/Dashbord/ManageDoctor";
+import MyAppointments from "./Pages/Dashbord/MyAppointments";
+import RequareAdmin from "./Pages/Dashbord/RequareAdmin";
+import Users from "./Pages/Dashbord/Users";
+import Home from "./Pages/Home/Home";
 import ServiceBooking from "./Pages/Home/ServiceBooking";
+import Login from "./Pages/Login/Login";
+import RequareAuth from "./Pages/Login/RequareAuth";
+import SignUp from "./Pages/Login/SignUp";
 import Footer from "./Pages/Shared/Footer";
+import Navbar from "./Pages/Shared/Navbar";
 
 function App() {
   return (
@@ -54,8 +53,6 @@ function App() {
           }
         >
           <Route index element={<MyAppointments></MyAppointments>}></Route>
-          <Route path="review" element={<MyReview></MyReview>}></Route>
-          <Route path="history" element={<History></History>}></Route>
           <Route
             path="users"
             element={

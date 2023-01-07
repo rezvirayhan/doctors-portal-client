@@ -2,8 +2,8 @@ import { signOut } from "firebase/auth";
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
+import logo from "../../assets/footer_logo.png";
 import auth from "../../firebase.init";
-// import logo from '../../assets/logo.png'
 
 const Navbar = () => {
   const logout = () => {
@@ -26,34 +26,22 @@ const Navbar = () => {
       <li>
         <Link to="/about-us">About</Link>
       </li>
-      <li>
-        <Link to="/review">Reviews</Link>
-      </li>
-      <li>
-        <Link to="/contact">Contact</Link>
-      </li>
       {user && (
         <li>
           <Link to="/dashbord">Dashbord</Link>
         </li>
       )}
       <li>{!user && <Link to="/login">Login</Link>}</li>
-      {/* <div class="avatar">
-        <div class="w-12 rounded-full">
-          <img src={user?.photoURL} alt="userDisplayname" />
-        </div>
-      </div> */}
-
       <div class="dropdown">
         <label tabindex="0" class="avatar">
           <div className="w-12 rounded-full">
-            <img src={user?.photoURL} alt="userDisplayname" />
+            <img src={user?.photoURL} />
           </div>
         </label>
         <ul
           style={{
             background: "rgb(33 59 124)",
-            color: "white",
+            color: "black",
             fontWeight: "600",
           }}
           tabindex="0"
@@ -107,7 +95,10 @@ const Navbar = () => {
             {menuItems}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl"> Logo</a>
+        {/* <a className="btn btn-ghost normal-case text-xl"> Logo</a> */}
+        <Link to="/">
+          <img src={logo}></img>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">{menuItems}</ul>

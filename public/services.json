@@ -1,57 +1,98 @@
 [
-    {
-      "_id": 1,
-      "name": "Teeth Orthodontics",
-      "slots": [
-        "08.00 AM - 08.30 AM",
-        "08.30 AM - 09.00 AM",
-        "09.00 AM - 9.30 AM",
-        "09.30 AM - 10.00 AM",
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM"
-      ]
-    },
-    {
-      "_id": 2,
-      "name": "Cosmetic Dentistry",
-      "slots": [
-        "09.00 AM - 9.30 AM",
-        "09.30 AM - 10.00 AM",
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM"
-      ]
-    },
-    {
-      "_id": 3,
-      "name": "Teeth Cleaning",
-      "slots": []
-    },
-    {
-      "_id": 4,
-      "name": "Cavity Protection",
-      "slots": [
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM"
-      ]
-    },
-    {
-      "_id": 5,
-      "name": "Pediatric Dental",
-      "slots": [
-        "08.30 AM - 09.00 AM",
-        "09.00 AM - 9.30 AM",
-        "09.30 AM - 10.00 AM",
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM"
-      ]
-    },
-    {
-      "_id": 6,
-      "name": "Oral Surgery",
-      "slots": [
-        "09.30 AM - 10.00 AM",
-        "10.00 AM - 10.30 AM",
-        "10.30 AM - 11.00 AM"
-      ]
-    }
-  ]
+  {
+    "_id": 1,
+    "name": "Teeth Orthodontics",
+    "img": "https://images.unsplash.com/photo-1620293023555-272e1a661b26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=576&q=80",
+    "slots": [
+      "08.00 AM - 08.30 AM",
+      "08.30 AM - 09.00 AM",
+      "09.00 AM - 09.30 AM",
+      "09.30 AM - 10.00 AM",
+      "10.00 AM - 10.30 AM",
+      "10.30 AM - 11.00 AM",
+      "11.00 AM - 11.30 AM",
+      "11.30 AM - 12.00 AM",
+      "04.00 PM - 04.30 PM",
+      "04.30 PM - 05.00 PM",
+      "05.30 PM - 06.00 PM",
+      "06.30 PM - 07.00 PM"
+    ]
+  },
+  {
+    "_id": 2,
+    "name": "Cosmetic Dentistry",
+    "img": "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80",
+    "slots": [
+      "03.00 PM - 03.30 PM",
+      "03.30 PM - 04.00 PM",
+      "04.00 PM - 04.30 PM",
+      "04.30 PM - 05.00 PM",
+      "05.00 PM - 05.30 PM",
+      "09.00 PM - 09.30 PM",
+      "09.30 PM - 10.00 PM",
+      "10.00 PM - 10.30 PM",
+      "10.00 PM - 11.00 PM"
+    ]
+  },
+  {
+    "_id": 3,
+    "name": "Teeth Cleaning",
+    "img": "https://images.unsplash.com/photo-1643297654416-05795d62e39c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=553&q=80",
+    "slots": [
+      "04.00 PM - 04.30 PM",
+      "04.30 PM - 05.00 PM",
+      "05.30 PM - 06.00 PM",
+      "06.30 PM - 07.00 PM",
+      "07.00 PM - 07.30 PM",
+      "07.30 PM - 00.00 PM",
+      "09.00 PM - 09.45 PM",
+      "10.00 PM - 10.45 PM"
+    ]
+  },
+  {
+    "_id": 4,
+    "name": "Cavity Protection",
+    "img": "https://images.unsplash.com/photo-1592300486905-2b5693280f6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+    "slots": [
+      "10.00 AM - 10.30 AM",
+      "10.30 AM - 11.00 AM",
+      "11.00 AM - 11.30 AM",
+      "06.30 PM - 07.00 PM",
+      "07.00 PM - 07.30 PM",
+      "07.30 PM - 00.00 PM",
+      "09.00 PM - 09.45 PM",
+      "10.00 PM - 10.45 PM"
+    ]
+  },
+  {
+    "_id": 5,
+    "name": "Pediatric Dental",
+    "img": "https://images.unsplash.com/photo-1606562536640-895faa06c7f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1422&q=80",
+    "slots": [
+      "08.30 AM - 09.00 AM",
+      "09.00 AM - 9.30 AM",
+      "09.30 AM - 10.00 AM",
+      "10.00 AM - 10.30 AM",
+      "10.30 AM - 11.00 AM",
+      "04.30 PM - 05.00 PM",
+      "05.00 PM - 05.30 PM",
+      "09.00 PM - 09.30 PM",
+      "09.30 PM - 10.00 PM",
+      "10.00 PM - 10.30 PM",
+      "10.00 PM - 11.00 PM"
+    ]
+  },
+  {
+    "_id": 6,
+    "name": "Oral Surgery",
+    "img": "https://images.unsplash.com/photo-1542909192-2f2241a99c9d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+    "slots": [
+      "04.30 PM - 05.00 PM",
+      "05.00 PM - 05.30 PM",
+      "09.00 PM - 09.30 PM",
+      "09.30 PM - 10.00 PM",
+      "10.00 PM - 10.30 PM",
+      "10.00 PM - 11.00 PM"
+    ]
+  }
+]
