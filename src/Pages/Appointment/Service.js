@@ -1,4 +1,5 @@
 import React from "react";
+import Slide from "react-reveal/Slide";
 
 const Service = ({ service, setTreatment }) => {
   const { name, slots, img } = service;
@@ -22,22 +23,25 @@ const Service = ({ service, setTreatment }) => {
           )}
         </p>
         <p>{slots.length} Available Appoitment</p>
-        <div className="card-actions justify-end">
-          <label
-            htmlFor="booking-modal"
-            onClick={() => setTreatment(service)}
-            disabled={slots.length === 0}
-            style={{
-              background:
-                "linear-gradient(136.85deg, #FF37F2 -15.82%, #405AFF 99.57%)",
-              fontWeight: "bold",
-              color: "white",
-            }}
-            className="btn"
-          >
-            Booking Now
-          </label>
-        </div>
+
+        <Slide left>
+          <div className="card-actions justify-end">
+            <label
+              htmlFor="booking-modal"
+              onClick={() => setTreatment(service)}
+              disabled={slots.length === 0}
+              style={{
+                background:
+                  "linear-gradient(136.85deg, #FF37F2 -15.82%, #405AFF 99.57%)",
+                fontWeight: "bold",
+                color: "white",
+              }}
+              className="btn"
+            >
+              Booking Now
+            </label>
+          </div>
+        </Slide>
       </div>
     </div>
   );

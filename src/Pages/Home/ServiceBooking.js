@@ -12,10 +12,10 @@ const ServiceBooking = () => {
   }, [serviceId]);
   const [user, loading, error] = useAuthState(auth);
 
-  const handlebooking = (event) => {
-    event.preventDefault();
-    const name = event.target.name.value;
-    console.log(name);
+  const handlebooking = (data) => {
+    // event.preventDefault();
+    // const name = event.target.name.value;
+    console.log(data);
   };
 
   return (
